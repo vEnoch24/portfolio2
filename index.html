@@ -77,15 +77,19 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+    <div class="container-fluid bg-dark d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                <!-- <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
                     <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profilepic.png" alt="">
-                </div>
+                </div> -->
                 <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">
+
+                    <!-- <img src="img/Animation - 1722349355982.gif"> -->
+                    <!-- <h1 class="display-6 text-uppercase text-primary mb-2">Hi</h1> -->
+                    <h3 class="text-white font-weight-normal mb-3"> I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2"
+                        style="-webkit-text-stroke: 1.5px #ffffff; text-shadow: 4px 6px 8px #000000;">
                         Enoch Ogunrinde</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Backend Developer, Game Developer</div>
@@ -279,7 +283,7 @@
                         HTML
                     </div>
                     <div class="skill mb-4">
-                        Css
+                        CSS
                     </div>
                     <div class="skill mb-4">
                         Javascript
@@ -315,7 +319,7 @@
                         <i class="fa fa-2x fa-code service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Backend Development</h4>
                     </div>
-                    <p>In my backend engineering projects, I leverage the power of C# with ASP.NET Core and .NET
+                    <p>In my backend development projects, I leverage the power of C# with ASP.NET Core and .NET
                         Core to build robust and scalable web apis and applications. I utilize Entity Framework Core (EF
                         Core)
                         for efficient database management and ORM capabilities, ensuring seamless data handling.
@@ -400,11 +404,40 @@
                 </div>
             </div>
             <div class="row portfolio-container">
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2 card">
+                        <img class="img-fluid rounded w-100" src="img/appointment.png" alt="">
+                        <div class="portfolio-item-info card-body">
+                            <h4 class="card-title">Appointment Scheduler</h4>
+                            <h6>A personal appointment scheduler with email and sms remainder. I created this projetct
+                                using
+                                <strong>ASP.NET core web api</strong> for the api endpoints, utilizing
+                                <strong>Hangfire</strong> for email and sms notification job scheduling with an
+                                <strong>Azure SQl database</strong> using <strong>EntityFramework core</strong> and
+                                SQLServer for database management.
+                                <strong>HTML, CSS and Javascript</strong> for Api calls on the
+                                frontend.
+                            </h6>
+                            <br>
+                            <button onclick="location.href='https://github.com/vEnoch24/Appointment-Scheduler.git'"
+                                class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span>
+                                Github</button>
+                            <button onclick="location.href='https://zaptimeschedule.web.app'"
+                                class="btn btn-secondary"><span class="glyphicon glyphicon-link"></span> Live
+                                Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
+
+
                         <img class="img-fluid rounded w-100" src="img/appointment.png" alt="">
                         <div class="portfolio-item-info">
                             <h4>Appointment Scheduler</h4>
+                            <h5></h5>
                             <a href="" onclick="location.href='https://github.com/vEnoch24/Appointment-Scheduler.git'"
                                 data-toggle="modal" data-target="#portfolioItem1"><span
                                     class="glyphicon glyphicon-eye-open"></span>
@@ -412,155 +445,193 @@
                             <a href="#" onclick="location.href='https://zaptimeschedule.web.app'"><span
                                     class="glyphicon glyphicon-link"></span>Live Demo</a>
                         </div>
-                        <!-- <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
                                 <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
                             </a>
-                        </div> -->
+                        </div>
                     </div>
-                </div>
+                </div> -->
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/bittrade.png" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>Bit Trade</h4>
-                            <a href="" onclick="location.href='https://github.com/vEnoch24/BitTrade.git'"
-                                data-toggle="modal" data-target="#portfolioItem1"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Github</a>
-                            <a href="#"><span class="glyphicon glyphicon-link"></span>Live Demo</a>
+                        <div class="portfolio-item-info card-body">
+                            <h4 class="card-title">BitTrade</h4>
+                            <h6>A web app for creating bitcoin address and buying bitcoin. I created this projetct
+                                using
+                                <strong>Blazor Server</strong> framework. I utilize the
+                                <strong>NBitcoin</strong> .NET bitcoin library for creating the bitcoin address and
+                                handling the bitcoin transactions. I also used
+                                <strong>Paystack</strong> for payment gateway.
+                            </h6>
+                            <br>
+                            <button onclick="location.href='https://github.com/vEnoch24/BitTrade.git'"
+                                class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span>
+                                Github</button>
+                            <button onclick="" class="btn btn-secondary"><span class="glyphicon glyphicon-link"></span>
+                                Live Demo</button>
                         </div>
-                        <!-- <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div> -->
+
+
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/Game.png" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>Shootem</h4>
-                            <a href="#" onclick="location.href='https://github.com/OG-Enoch/Shootem.git'"
-                                data-toggle="modal" data-target="#portfolioItem1"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Github</a>
-                            <a href="#" onclick="location.href='https://shootem.en.uptodown.com/android'"><span
-                                    class="glyphicon glyphicon-link"></span>Live Demo</a>
+                        <div class="portfolio-item-info card-body">
+                            <h4 class="card-title">Shootem</h4>
+                            <h6>A top down neon shooter game for mobile. I created this projetct
+                                using
+                                <strong>C#</strong> and
+                                <strong>Unity</strong>. Improved my OOP knowledge. Using that knowledge, I implemented
+                                random gameobject spawning. Particles generation and animation.
+                            </h6>
+                            <br>
+                            <button onclick="location.href='https://github.com/OG-Enoch/Shootem.git'"
+                                class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span>
+                                Github</button>
+                            <button onclick="location.href='https://shootem.en.uptodown.com/android'"
+                                class="btn btn-secondary"><span class="glyphicon glyphicon-link"></span> Live
+                                Demo</button>
                         </div>
-                        <!-- <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div> -->
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/contries.png" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>Countries Profile</h4>
-                            <a href="#" onclick="location.href='https://github.com/vEnoch24/Countries.git'"
-                                data-toggle="modal" data-target="#portfolioItem1"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Github</a>
-                            <a href="#" onclick="location.href='https://countries-viewer.onrender.com'"><span
-                                    class="glyphicon glyphicon-link"></span>Live Demo</a>
+                        <div class="portfolio-item-info card-body">
+                            <h4 class="card-title">Country Profile</h4>
+                            <h6>Global information site with grid and map view. I created this projetct
+                                using
+                                <strong>HTML, CSS and javascript</strong> called an open api to get current country
+                                informations
+                            </h6>
+                            <br>
+                            <button onclick="location.href='https://github.com/vEnoch24/Countries.git'"
+                                class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span>
+                                Github</button>
+                            <button onclick="location.href='https://countries-viewer.onrender.com'"
+                                class="btn btn-secondary"><span class="glyphicon glyphicon-link"></span> Live
+                                Demo</button>
                         </div>
-                        <!-- <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div> -->
+
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/hexa.png" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>Hexa</h4>
-                            <a href="#" onclick="location.href='https://github.com/OG-Enoch/Hexa.git'"
-                                data-toggle="modal" data-target="#portfolioItem1"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Github</a>
-                            <a href="#" onclick="location.href='https://hexa.en.uptodown.com/android'"><span
-                                    class="glyphicon glyphicon-link"></span>Live Demo</a>
+                        <div class="portfolio-item-info card-body">
+                            <h4 class="card-title">Hexa</h4>
+                            <h6>Prototype of super hexagon remake for mobile. I created this projetct
+                                using
+                                <strong>C#</strong> with <strong>Unity</strong>
+                            </h6>
+                            <br>
+                            <button onclick="location.href='https://github.com/OG-Enoch/Hexa.git'"
+                                class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span>
+                                Github</button>
+                            <button onclick="location.href='https://hexa.en.uptodown.com/android'"
+                                class="btn btn-secondary"><span class="glyphicon glyphicon-link"></span> Live
+                                Demo</button>
                         </div>
-                        <!-- <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div> -->
+
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/dodge.png" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>Dodge</h4>
-                            <a href="#" onclick="location.href='https://github.com/OG-Enoch/Dodge.git'"
-                                data-toggle="modal" data-target="#portfolioItem1"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Github</a>
-                            <a href="#" onclick="location.href='https://github.com/OG-Enoch/Dodge.git'"><span
-                                    class="glyphicon glyphicon-link"></span>Live Demo</a>
+                        <div class="portfolio-item-info card-body">
+                            <h4 class="card-title">Dodge</h4>
+                            <h6>3D Endless scroller, obstacle avoidance mobile game. I created this projetct
+                                using
+                                <strong>C#</strong> with <strong>Unity</strong>. Implemented endless object generation
+                                and scrolling. Immplemented audio syncer system whereby, specified gameobjects react to
+                                audio or sound
+                            </h6>
+                            <br>
+                            <button onclick="location.href='https://github.com/OG-Enoch/Dodge.git'"
+                                class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span>
+                                Github</button>
+                            <button onclick="location.href='https://github.com/OG-Enoch/Dodge.git'"
+                                class="btn btn-secondary"><span class="glyphicon glyphicon-link"></span> Live
+                                Demo</button>
                         </div>
-                        <!-- <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div> -->
+
+
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/character-selection.png" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>Character Selection Template</h4>
-                            <a href="#" onclick="location.href='https://github.com/OG-Enoch/CharacterSelection.git'"
-                                data-toggle="modal" data-target="#portfolioItem1"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Github</a>
-                            <a href="#"
-                                onclick="location.href='https://github.com/OG-Enoch/CharacterSelection.git'"><span
-                                    class="glyphicon glyphicon-link"></span>Live Demo</a>
+                        <div class="portfolio-item-info card-body">
+                            <h4 class="card-title">Character Selection Template</h4>
+                            <h6>A character selection template for unity. Created using
+                                <strong>C#</strong> with <strong>Unity</strong>
+                            </h6>
+                            <br>
+                            <button onclick="location.href='https://github.com/OG-Enoch/CharacterSelection.git'"
+                                class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span>
+                                Github</button>
+                            <button onclick="location.href='https://github.com/OG-Enoch/CharacterSelection.git'"
+                                class="btn btn-secondary"><span class="glyphicon glyphicon-link"></span> Live
+                                Demo</button>
                         </div>
-                        <!-- <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div> -->
+
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/speech-to-text.png" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>Speech-To-Text</h4>
-                            <a href="#" onclick="location.href='https://github.com/vEnoch24/Speech-Detection-App.git'"
-                                data-toggle="modal" data-target="#portfolioItem1"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Github</a>
-                            <a href="#" onclick="location.href='https://speech-detection.onrender.com'"><span
-                                    class="glyphicon glyphicon-link"></span>Live Demo</a>
+                        <div class="portfolio-item-info card-body">
+                            <h4 class="card-title">Speech-To-Text</h4>
+                            <h6>Speech-to-text web app. Created using
+                                <strong>HTML, CSS and Javascript</strong> using Windows Speech recognition
+                            </h6>
+                            <br>
+                            <button onclick="location.href='https://github.com/vEnoch24/Speech-Detection-App.git'"
+                                class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span>
+                                Github</button>
+                            <button onclick="location.href='https://speech-detection.onrender.com'"
+                                class="btn btn-secondary"><span class="glyphicon glyphicon-link"></span> Live
+                                Demo</button>
                         </div>
-                        <!-- <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div> -->
+
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/game.png" alt="">
-                        <div class="portfolio-item-info">
-                            <h4>Shootem beta</h4>
-                            <a href="#" onclick="location.href='https://github.com/vEnoch24/HyperCasual.git'"
-                                data-toggle="modal" data-target="#portfolioItem1"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Github</a>
-                            <a href="#" onclick="location.href='https://github.com/vEnoch24/HyperCasual.git'"><span
-                                    class="glyphicon glyphicon-link"></span>Live Demo</a>
+                        <img class="img-fluid rounded w-100" src="img/zaptimechat.png" alt="">
+                        <div class="portfolio-item-info card-body">
+                            <h4 class="card-title">zaptimechat</h4>
+                            <h6>A realtime chat web app. Created using
+                                <strong>Blazor WebAssmebly</strong>. I utilized <strong>signalR</strong> for real-time
+                                server to client communication. used <strong>Azure SQl database</strong> to store user
+                                details and messages, I used <strong>EntityFramework core and LINQ</strong> for database
+                                management.
+                            </h6>
+                            <br>
+                            <button onclick="location.href='https://github.com/vEnoch24/ZaptimeChatApp.git'"
+                                class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span>
+                                Github</button>
+                            <button onclick="location.href='https://github.com/'" class="btn btn-secondary"><span
+                                    class="glyphicon glyphicon-link"></span> Live
+                                Demo</button>
                         </div>
-                        <!-- <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div> -->
+
                     </div>
                 </div>
             </div>
@@ -718,7 +789,7 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
                 <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
