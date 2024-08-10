@@ -11257,13 +11257,12 @@ h6,
 } */
 
 
-
 .portfolio-item {
   display: flex;
-  flex: 1 0 30%;
+  flex: 1 0 40%;
   margin-bottom: 20px;
   border-radius: 8px;
-  box-shadow: 1px 1.2px 2px;
+  /* box-shadow: 0.8px 0.8px 0.8px; */
 
   transition: all 0.2s ease-in;
 }
@@ -11271,6 +11270,8 @@ h6,
 .portfolio-item:hover {
   transform: scale(1.01);
   z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.1);
   background-color: white;
 }
 
