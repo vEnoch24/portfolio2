@@ -26,6 +26,9 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="img/icon.png" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -94,7 +97,7 @@
             </ul>
         </div>
 
-        <div class="container">
+        <div class="container" data-aos="fade-up" style="z-index: 10;">
             <div class="row align-items-center">
                 <!-- <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
                     <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profilepic.png" alt="">
@@ -102,17 +105,19 @@
 
 
 
-                <div class="col-lg-7 text-center text-lg-left text-layer">
+                <div class="col-lg-7 text-center text-lg-left text-layer" data-aos="fade-up">
 
                     <!-- <img src="img/Animation - 1722349355982.gif"> -->
                     <!-- <h1 class="display-6 text-uppercase text-primary mb-2">Hi</h1> -->
                     <h3 class="text-white font-weight-normal mb-3">Hello, I'm</h3>
                     <h1 class="display-3 text-uppercase text-primary mb-2"
-                        style="-webkit-text-stroke: 1.5px #ffffff; text-shadow: 4px 6px 8px #000000;">
+                        style="-webkit-text-stroke: 1.5px #ffffff; text-shadow: 4px 6px 8px #000000;"
+                        data-aos="fade-left" data-aos-delay="100">
                         Enoch Ogunrinde</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Backend Developer, Game Developer</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5"
+                        data-aos="zoom-in" data-aos-delay="100">
                         <a href="#about" class="btn btn-outline-light mr-5">Learn more</a>
                         <!-- <a href="#contact" class="btn btn-outline-light mr-5">Contact Me</a> -->
                         <!-- <button type="button" class="btn-play" data-toggle="modal"
@@ -893,6 +898,13 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 </body>
 
 </html>
